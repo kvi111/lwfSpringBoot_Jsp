@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>双向绑定</title>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.3.4"></script>
+</head>
+<body>
+<div>
+    <div id="app">
+        <p>
+            {{ message }}
+        </p>
+        <input v-model="message"/>
+    </div>
+    <script>
+        var vm = new Vue({
+            el:'#app',
+            data: {
+                message:'Hello Vue!'
+            }
+        })
+    </script>
+</div>
+</body>
+</html>
