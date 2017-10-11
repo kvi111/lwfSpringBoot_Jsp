@@ -28,6 +28,10 @@ ${hello}
     out.println(s);
 %>
 
+<hr>
+
+"<%=request.getContextPath()%>"
+
 </body>
 
 </html>
