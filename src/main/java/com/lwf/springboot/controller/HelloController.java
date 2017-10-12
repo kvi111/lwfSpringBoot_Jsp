@@ -27,4 +27,10 @@ public class HelloController {
     public String helloApi(Map<String,Object> map){
         return "hello";
     }
+
+    @RequestMapping()
+    @ResponseBody
+    public String helloApi1(Map<String,Object> map){
+        return "hello1";
+    }
 }
